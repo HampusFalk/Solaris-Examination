@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #1c2455 0%, #180624 100%);
+    overflow: hidden;
+    display: flex;
+}
+
+#sunBorder1 {
+    position: absolute;
+    background-color: #428ED41A;
+    width: 1340px;
+    height: 1340px;
+    top: -180px;
+    left: -1170px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: none;
+}
+
+#sunBorder2 {
+    position: absolute;
+    background-color: #428dd41a;
+    width: 1404px;
+    height: 1404px;
+    top: -215px;
+    left: -1185px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: none;
+}
+
+#sun {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 2.5rem;
+    left: 0;
+    bottom: 2.5rem;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+#bluesun1 {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 2.5rem;
+    left: 0;
+    bottom: 2.5rem;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+#bluesun2 {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 2.5rem;
+    left: 0;
+    bottom: 2.5rem;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+#planets {
+    top: 40%;
+    bottom: 40%;
+    right: 10%;
+    left: 20%;
+    flex-shrink: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+#solarText-container {
+    top: 5%;
+    right: 10%;
+    text-align: right;
+    position: fixed;
+}
+
+.solarSystem-text {
+    color: #FFF;
+    font-family: Secular One;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 6px;
+}
+
+.solaris-text {
+    padding-top: 16px;
+    color: #FFD029;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 16px;
+}
+
+#SaturnAndRings {
+    position: relative;
+}
+
+#Rings {
+    position: absolute;
+    left: -25px;
+    top: 20px;
+}
+
+#stars-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: none;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    background-color: rgb(118, 118, 151);
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+}
+
+#aboutPlanet {
+    display: none;
+    position: absolute;
+    width: 640px;
+    height: 682px;
+    top: 10%;
+    right: 35%;
+    z-index: 5;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
+/*                            CSS FÖR PLANET INFORMATIONEN                       */
+
+
+
+.planetInformation {
+    flex-direction: column;
+}
+
+.planetNames {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 16px;
+    align-self: stretch;
+    height: auto;
+}
+
+#planetName {
+    color: #FFF;
+    font-family: Secular One;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 5.4px;
+    text-transform: uppercase;
+}
+
+#planetLatinName {
+    color: #FFD029;
+    font-family: Roboto Condensed Light;
+    font-size: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 14.4px;
+    text-transform: uppercase;
+}
+
+
+.infoAboutPlanets {
+    margin-top: 32px;
+    height: auto;
+    margin-bottom: 32px;
+}
+
+.factsAboutPlanets {
+    color: #FFF;
+    font-family: Secular One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.62px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.moons {
+    margin-top: 32px;
+    width: 640px;
+    word-wrap: break-word
+}
+
+.info-container {
+    width: 100%;
+}
+
+p {
+    color: #FFF;
+    font-family: Roboto Condensed Light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170%;
+}
